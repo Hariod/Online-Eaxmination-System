@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section.main {
+	display: flex;
+	justify-content: space-around;
+}
+
+section.number {
+	width:18%;
+	position: fixed;
+	top:190px;
+	left: 0px;
+	padding: 10px;
+}
+/*.number>a{
+	width:30px;
+	height:30px;
+	border:1px solid #0000FF;
+	float: left;
+	margin:0 1px 1px 0;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+}*/
+.number>div{
+	width:30px;
+	height:30px;
+	border:1px solid #0000FF;
+	float: left;
+	margin:0 1px 1px 0;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+}
+section.test {
+	width: 60%;
+	margin-bottom:50px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	height: 60px;
+	/*background-color: red;*/
+	padding: 0 50px;
+	border-bottom: 1px solid black;
+}
+
+header>span {
+	height: 100%;
+	line-height: 60px;
+}
+
+div.test-title {
+	text-align: center;
+	width: 100%;
+	margin: 30px 0 15px 0;
+	font-size: 30px;
+}
+
+div.test-fraction {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+div.subject>ul>li {
+	list-style: none;
+}
+
+div.subject>ul>li>ul>li {
+	list-style: none;
+	cursor: pointer;
+}
+
+div.subject>ul>li>p {
+	margin: 10px 0;
+}
+footer{
+	position: relative;
+	margin:50px 0;
+}
+footer>button{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
