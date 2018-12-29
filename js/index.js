@@ -13,6 +13,7 @@ $(function() {
 		async: false,
 		success: function(data) {
 			var allsubject = data.data.subject;
+			$("section>.test-title").html(data.data.testname);
 			var length = allsubject.length;
 			Allsubject = allsubject;
 			Length = length;
@@ -46,6 +47,7 @@ $(function() {
 					.children("input")
 					.attr("name", "Q" + i);
 			}
+			
 		},
 		error: function() {
 			alert("试卷信息加载失败");
